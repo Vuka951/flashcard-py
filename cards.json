@@ -1,0 +1,6 @@
+[
+    {"front_text": "Bezpečný", "back_text": "Safe", "image": "safe.jpg"},
+    {"front_text": "Rychlost", "back_text": "Speed", "image": "speed.jpg"},
+    {"front_text": "Horečka/Teplota", "back_text": "Temperature", "image": "temperature.png"},
+    {"front_text": "Polštář", "back_text": "Pillow", "image": "pillow.jpg"}
+]
