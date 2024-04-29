@@ -1,4 +1,4 @@
-from tkinter import ttk, Tk, Toplevel
+from tkinter import ttk, Tk
 from ttkthemes import ThemedStyle
 from PIL import Image, ImageTk
 import json

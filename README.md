@@ -18,8 +18,8 @@
 - Show a placeholder image if no image is available.
 - Allow users to reveal the back of the flashcard by clicking a "Show" button.
 - Enable keyboard shortcuts for navigation and revealing the back of the flashcard
-  - W for Show
-  - A for Previous Card
+  - W - for Show
+  - A - for Previous Card
   - D - for Next Card
 - Display the current card number out of the total number of cards.
 - App in Action 📷
