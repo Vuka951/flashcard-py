@@ -1,4 +1,4 @@
-from tkinter import ttk, Tk
+from tkinter import ttk, Tk, Toplevel
 from ttkthemes import ThemedStyle
 from PIL import Image, ImageTk
 import json
@@ -8,6 +8,8 @@ from io import BytesIO
 class FlashcardApp:
     def __init__(self, master):
         self.master = master # docs: https://docs.python.org/3/library/tkinter.html#tkinter.Tk.master
+        # Needed for keys to work for app use/navigation
+        self.bind_key_events() # example: https://tkinterexamples.com/events/keyboard/
         self.current_card = 0
         
         with open('./cards.json', encoding='utf-8') as f:
@@ -109,6 +111,11 @@ class FlashcardApp:
         total_cards = len(self.cards)
         current_card_number = self.current_card + 1
         self.card_counter_label.config(text=f"{current_card_number}/{total_cards}")
+
+    def bind_key_events(self):
+        self.master.bind('w', lambda _: self.show_back())
+        self.master.bind('a', lambda _: self.previous_card())
+        self.master.bind('d', lambda _: self.next_card())
 
 def main():
     root = Tk()
